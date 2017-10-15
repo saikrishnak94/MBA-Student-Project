@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+
+	<definition name="login" extends="base.definition">
+		<put-attribute name="title" value="Login Page" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/login.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/hello.jsp" />
+	</definition>
+    
+	<definition name="adminHome" extends="base.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/adminhome.jsp" />
+	</definition>
+	<definition name="regiform" extends="base.definition">
+		<put-attribute name="title" value="Registration Page" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/regiform.jsp" />
+	</definition>
+	<definition name="editMail" extends="base.definition">
+		<put-attribute name="title" value="Registration Page" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/editEmail.jsp" />
+	</definition>
+	<definition name="addAdvisor" extends="base.definition">
+		<put-attribute name="title" value="Add Advisor" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addAdvisor.jsp" />
+	</definition>
+	<definition name="withdraw" extends="base.definition">
+		<put-attribute name="title" value="Add Advisor" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/withdrawnstudent.jsp" />
+	</definition>
+	<definition name="pullreport" extends="base.definition">
+		<put-attribute name="title" value="list of students who have not completed the Academic Code of Conduct" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/pullreportstudent.jsp" />
+	</definition>
+	<definition name="addConcen" extends="base.definition">
+		<put-attribute name="title" value="Registration Page" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addConcentration.jsp" />
+	</definition>
+    <definition name="concList" extends="base.definition">
+		<put-attribute name="title" value="Concentration List" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/concList.jsp" />
+	</definition>
+	<definition name="activate" extends="base.definition">
+		<put-attribute name="title" value="Activate/DeActivate Advisor" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/activeinactive.jsp" />
+	</definition>
+	<definition name="resetAdvPassword" extends="base.definition">
+		<put-attribute name="title" value="Reset Advisor Password" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/resetAdvPassword.jsp" />
+	</definition>
+	<definition name="addprerequisity" extends="base.definition">
+		<put-attribute name="title" value="addprerequisit" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addprerequisit.jsp" />
+	</definition>
+	<definition name="editPrerequisit1" extends="base.definition">
+		<put-attribute name="title" value="editPrerequisit" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/editPrerequisit.jsp" />
+	</definition>
+	<definition name="editStudentConcen" extends="base.definition">
+		<put-attribute name="title" value="Edit Student Conc" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/admin/adminmenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/editStudentConcen.jsp" />
+	</definition>
+	<definition name="studentHome" extends="base.definition">
+		<put-attribute name="title" value="Student Page" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/student/studentMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/student/studentHome.jsp" />
+	</definition>
+	<definition name="completeQuestion" extends="base.definition">
+		<put-attribute name="title" value="Student Questionnair" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/student/studentMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/student/studentQ.jsp" />
+	</definition>
+	<definition name="advisorHome" extends="base.definition">
+		<put-attribute name="title" value="Advisor Home" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/advisor/advisorMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/advisor/advisorHome.jsp" />
+	</definition>
+	<definition name="editAdvPassword" extends="base.definition">
+		<put-attribute name="title" value="Reset Advisor Password" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/advisor/advisorMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/resetAdvPassword.jsp" />
+	</definition>
+	<definition name="retreiveStudent" extends="base.definition">
+		<put-attribute name="title" value="Retrieve student profile" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/advisor/advisorMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/advisor/retreiveStudent.jsp" />
+	</definition>
+	<definition name="viewStudent" extends="base.definition">
+		<put-attribute name="title" value="view student profile" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/advisor/advisorMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/advisor/viewstudentprofile.jsp" />
+	</definition>
+	<definition name="enterNote" extends="base.definition">
+		<put-attribute name="title" value="Enter Note" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/advisor/advisorMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/advisor/enterNote.jsp" />
+	</definition>
+	<definition name="viewNote" extends="base.definition">
+		<put-attribute name="title" value="Enter Note" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/advisor/advisorMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/advisor/viewNote.jsp" />
+	</definition>
+	<definition name="markpreRequisit" extends="base.definition">
+		<put-attribute name="title" value="Mark Prerequist Met" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/advisor/advisorMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/advisor/markpreRequisit.jsp" />
+	</definition>
+	<definition name="codeOfConduct" extends="base.definition">
+		<put-attribute name="title" value="Code of conduct" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/student/studentMenu.jsp"/>
+		<put-attribute name="body" value="/WEB-INF/jsp/student/codeofconduct.jsp" />
+	</definition>
+</tiles-definitions>

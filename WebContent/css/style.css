@@ -1,0 +1,9 @@
+@CHARSET "ISO-8859-1";
+.headerpart{
+	
+	background-image: {url("../images/index.jpg") repeat-x 20% 5%};
+    background-repeat: no-repeat;
+    background-position: right top;
+    
+	
+}
